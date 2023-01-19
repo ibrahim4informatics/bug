@@ -1,0 +1,108 @@
+@import url(./home.css);
+
+create{
+    max-width: 100%;
+    margin: 40px;
+    max-height: calc(100vh - 74px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid .5px var(--white);
+    border-radius: 20px;
+}
+
+
+create h2{
+    color: var(--primary);
+}
+
+create h2 span{
+    color: var(--danger);
+}
+
+
+create form {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+create form input, textarea {
+    width: 80%;
+}
+
+create form input, textarea {
+    outline: none;
+    border: 1px solid var(--danger);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--primary);
+    
+}
+create form input:focus{
+    border-color: var(--secondary);
+    transition: .3s;
+}
+
+create form textarea:focus{
+    border-color: var(--secondary);
+    transition: .3s;
+}
+
+create form input::placeholder{
+    color: var(--white);
+    opacity: .8;
+}
+
+create form textarea::placeholder{
+    color: var(--white);
+    opacity: .8;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.actions a {
+    background-color: var(--danger);
+    color: var(--white);
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.actions a:hover {
+    background-color: var(--primary);
+    letter-spacing: 0px;
+    color: var(--white);
+    transition: .2s ease;
+}
+
+
+.sub{
+    color: var(--white);
+    background-color: var(--primary) !important;
+    letter-spacing: 2px;
+    max-width: 80px;
+    margin: 10px;
+}
+
+.sub:hover{
+    color: var(--white);
+    background-color: var(--secondary) !important;
+    transition: .5s ease;
+    max-width: 40%;
+    letter-spacing: 10px;
+}

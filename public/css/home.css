@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500;700&display=swap");
+:root {
+  --dark: #282A3A;
+  --white: #D8D8D8;
+  --primary: #51557E;
+  --secondary: #1597BB;
+  --danger: #E94560;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: var(--dark);
+}
+
+nav a:hover {
+  color: var(--danger) !important;
+  transition: .2s ease;
+}
+
+nav {
+  position: top fixed;
+  background-color: var(--dark) !important;
+}
+nav a {
+  color: var(--white) !important;
+}
+
+
+articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+articles h2 {
+  color: var(--primary);
+  letter-spacing: 8px;
+}
+
+articles h2 span {
+  color: var(--danger);
+}
+
+.article-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  border: 0.5px solid var(--white);
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 350px;
+  margin: 10px;
+  border: .5px solid var(--white);
+  border-radius: 10px;
+  max-width: 30%;
+}
+
+article:hover{
+  border-color: var(--danger);
+  border-left-width: 5px;
+  border-top-left-radius: 0px;
+  transition: .3s ease;
+}
+
+article:hover h3 {
+  color: var(--danger);
+  transition: .2s ease;
+}
+
+article h3{
+  color: var(--primary);
+  letter-spacing: 6px;
+  align-self: center;
+  margin: 10px;
+}
+
+
+article p {
+  color: var(--dark);
+  font-size: 18px;
+  margin: 10px;
+  
+}
+
+article .publisher{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article .publisher a:first-child{
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 5px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+article .publisher a:first-child span {
+  color: var(--danger);
+}
+
+
+article .publisher a:last-child{
+  background-color: var(--danger);
+  color: var(--white);
+  margin: 10px;
+}
