@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <%- include('./partials/head') %> 
+  <body>
+    <%- include("./partials/navbar.ejs") %>
+    <articles>
+        <h2 class="mt-2">TRENDING <span>ARTICLES</span></h2>
+        <section class="container article-container">
+          <% articles.forEach(article =>{ %> 
+            <article>
+                <h3><%= article.title %></h3>
+                <p><%= article.description %>...</p>
+                <div class="publisher">
+                    <a href="">Author: <span>@username</span></a>
+                    <a class="btn" href="">Read</a>
+                </div>
+            </article> 
+          <%}) %>
+
+        </section>
+    </articles>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/add.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('./partials/navbar.ejs') %> 
+    <section style="height: 10px;" class="m-4 p-3"></section>
+    <create>
+        <h2 class="mt-2">CREATE <span>ARTICLE</span></h2>
+        <form method="POST" action="/">
+            <input name="title" type="text" placeholder="title">
+            <input name="description" type="text" placeholder="description">
+            <textarea placeholder="article" name="content" cols="30" rows="10"></textarea>
+            <div class="actions">
+                <a class="btn" href="/admin">GOBACK</a>
+                <input class="btn sub" type="submit" value="POST">
+            </div>
+        </form>
+    </create>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
